@@ -122,7 +122,7 @@ workbook.close()
 # Q3
 # =============================================================================
 from xlrd import open_workbook
-wb = open_workbook('simple.xlsx')
+wb = open_workbook('example10.xlsx')
 for s in wb.sheets():
      print ("Sheet:", s.name)
      for row in range(s.nrows):
