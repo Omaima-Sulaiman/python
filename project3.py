@@ -57,14 +57,14 @@ class Employee(Person):
         self.__salary = salary
     def printInfo(self):
         print(f'''
-Name: {self._name}
-Address: {self._address}
-Employee Number: {self.employee_number}
-Salary: {self.__salary}
-Gender: {self.__gender}
-Nationality: {self.__nationality}
-Date of birth: {self.__dob}
-Department: {self.__department}
+       Name: {self._name}
+       Address: {self._address}
+       Employee Number: {self.employee_number}
+       Salary: {self.__salary}
+       Gender: {self.__gender}
+       Nationality: {self.__nationality}
+       Date of birth: {self.__dob}
+       Department: {self.__department}
         ''')
     def __del__(self):
         print(f'Employee: {self.employee_number} have been deleted')

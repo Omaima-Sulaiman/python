@@ -132,21 +132,12 @@ def add_employee():
     address= Label(c, text ="address").grid(row = 5, sticky=E)
     e6 = Entry(c, textvariable= value6).grid(row = 5, column =1)
     def add():
-        #print()
-        # lista.append(value1.get())
-        #lista.append(value2.get())
-        #lista.append(value3.get())
-        #lista.append(value4.get())
-        #lista.append(value5.get())
-        # lista.append(value6.get())
-        # print(lista)
+        
         E1=Employee(value1.get(),value2.get(),value6.get(),value4.get(),value3.get(),[1,5,9])
-        #print(Employee1.printinfo())
+        
         empl_list.append(E1)
     save = Button(c, text="save", command= add).grid(row = 7, column = 1)
-        #c.mainloop()
-        #parent = Tk()
-#print('rrr',empl_list)
+
 def view_employee():
     c = Toplevel(root)
     c.title("View Employee")
@@ -173,7 +164,7 @@ def delete_employee():
         if valudel.get()==emp.Employee_Num:
             empl_list.remove(emp)
             messagebox.showinfo("messagebox", "the employee  Number is delete ")
-        #messagebox.showinfo("messagebox", "the employee with this Number doesn't exist")
+       
     de = Entry(c, textvariable= valudel).grid(row = 5, column =3)
     delete = Button(c, text="delete", command= destro).grid(row = 7, column = 1)
 stu_list=[]
